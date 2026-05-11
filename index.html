@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="Admin.png" alt="Job" class="logo">
+        <h2 class="title-text">Micro Lift</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#admins">Admins</a></li>
+            <li><a href="#employers">Employers</a></li>
+            <li><a href="#job-hunters">Job Finders</a></li>
+            <li><a href="#jobs">Jobs</a></li>
+            <li><a href="#payments">Payment Log</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="admins">
+            <div class="section-header">
+                <img src="Admin.png" alt="Logo" class="logo">
+                <h2>Admins</h2>
+                <img id="print-admins" style="margin-left: auto;" src="print.png" alt="Print" class="logo">
+            </div>
+            <p>Current Admins and their status.</p>
+            <div class="search-bar">
+
+                <input class="search-input" id="admin-search" type="search" placeholder="Search admins..."
+                    autocomplete="off">
+
+                <select id="admin-status-filter" class="filters">
+                    <option value="">All Status</option>
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                    <option value="Suspended">Suspended</option>
+                </select>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Location</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <p id="export-admin" style="
+            border-radius:10px;
+            background-color:rgb(16, 51, 73);
+            color:white;
+            padding:6px 12px;
+            width:fit-content;
+            margin-left:auto;
+            margin-top:10px;
+            cursor:pointer;
+        ">
+                Export To CSV
+            </p>
+        </section>
+
+        <section id="employers">
+            <div class="section-header">
+                <img src="Employer.png" alt="Logo" class="logo">
+                <h2>Employers</h2>
+
+                <img id="print-employers" style="margin-left: auto;" src="print.png" alt="Print" class="logo">
+            </div>
+
+            <p>
+                List of registered employers currently using the application and managing
+                job postings.
+            </p>
+
+            <div class="search-bar">
+                <input class="search-input" id="employer-search" type="search" placeholder="Search employers..."
+                    autocomplete="off">
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Contact</th>
+                            <th>Location</th>
+                            <th>Industry</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- EXPORT BUTTON -->
+            <p id="export-emp" style="
+            border-radius:10px;
+            background-color:rgb(16, 51, 73);
+            color:white;
+            padding:6px 12px;
+            width:fit-content;
+            margin-left:auto;
+            margin-top:10px;
+            cursor:pointer;
+        ">
+                Export To CSV
+            </p>
+        </section>
+
+        <section id="job-hunters">
+            <div class="section-header">
+                <img src="Job_humt.png" alt="Logo" class="logo">
+                <h2>Job Finders</h2>
+
+                <img id="print-job-hunters" style="margin-left: auto;" src="print.png" alt="Print" class="logo">
+            </div>
+
+            <p>
+                List of registered job seekers currently using the application and searching
+                for employment opportunities.
+            </p>
+
+            <div class="search-bar">
+                <input class="search-input" id="jh-search" type="search"
+                    placeholder="Search users by name or column data..." autocomplete="off">
+
+                <select id="jh-filter" class="filters">
+                    <option value="">All Status</option>
+                    <option value="Available">Available</option>
+                    <option value="Unavailable">Unavailable</option>
+                </select>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Contact</th>
+                            <th>Location</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- EXPORT BUTTON -->
+            <p id="export-jh" style="
+            border-radius:10px;
+            background-color:rgb(16, 51, 73);
+            color:white;
+            padding:6px 12px;
+            width:fit-content;
+            margin-left:auto;
+            margin-top:10px;
+            cursor:pointer;
+        ">
+                Export To CSV
+            </p>
+        </section>
+
+        <section id="jobs">
+            <div class="section-header">
+                <img src="Job.png" alt="Logo" class="logo">
+                <h2>Jobs</h2>
+
+                <img id="print-jobs" style="margin-left: auto;" src="print.png" alt="Print" class="logo">
+            </div>
+
+            <p>
+                List of available, filled, and reopened job postings from registered
+                employers within the application.
+            </p>
+
+            <div class="search-bar">
+                <input class="search-input" id="job-search" type="search" placeholder="Search jobs..."
+                    autocomplete="off">
+                <select id="j-status-filter" class="filters">
+                    <option value="">All Status</option>
+                    <option value="Open">Open</option>
+                    <option value="Closed">Closed</option>
+                    <option value="Filled">Filled</option>
+
+                </select>
+            </div>
+
+            <div id="job-container" class="job-container table-wrapper">
+            </div>
+
+            <!-- EXPORT BUTTON -->
+            <p id="export-j" style="
+            border-radius:10px;
+            background-color:rgb(16, 51, 73);
+            color:white;
+            padding:6px 12px;
+            width:fit-content;
+            margin-left:auto;
+            margin-top:10px;
+            cursor:pointer;
+        ">
+                Export To CSV
+            </p>
+        </section>
+
+        <section id="payments">
+            <div class="section-header">
+                <img src="pay.png" alt="Logo" class="logo">
+                <h2>Payment Logs</h2>
+                <img id="print-payments" style="margin-left: auto;" src="print.png" alt="Print" class="logo">
+            </div>
+
+            <p>
+                List of all completed transactions between job hunters and employers for
+                successfully assigned jobs.
+            </p>
+
+            <div class="search-bar">
+                <input class="search-input" id="payment-search" type="search"
+                    placeholder="Search payments by ID, job, or job hunter..." autocomplete="off">
+                <!-- FROM DATE -->
+                <input class="filters" id="payment-from" type="datetime-local"> -
+
+                <!-- TO DATE -->
+                <input class="filters" id="payment-to" type="datetime-local">
+            </div>
+
+            <div class="receipt-container table-wrapper" id="receipt-container">
+            </div>
+
+            <!-- EXPORT BUTTON -->
+            <p id="export-pay" style="
+            border-radius:10px;
+            background-color:rgb(16, 51, 73);
+            color:white;
+            padding:6px 12px;
+            width:fit-content;
+            margin-left:auto;
+            margin-top:10px;
+            cursor:pointer;
+        ">
+                Export To CSV
+            </p>
+        </section>
+    </main>
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>

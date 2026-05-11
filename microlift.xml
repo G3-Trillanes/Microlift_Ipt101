@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transform.xsl"?>
+<MicroLift>
+
+    <!-- Admin -->
+    <Admin>
+        <AdminID>A001</AdminID>
+        <AdminName>Juan D Cruz</AdminName>
+        <AdminEmail>juancruz@gmail.com</AdminEmail>
+        <AdminLocation>San Pablo, Laguna</AdminLocation>
+        <status>Active</status>
+    </Admin>
+
+    <Admin>
+        <AdminID>A002</AdminID>
+        <AdminName>Maria Santos</AdminName>
+        <AdminEmail>mariasantos@gmail.com</AdminEmail>
+        <AdminLocation>Lipa City, Batangas</AdminLocation>
+        <Status>Active</Status>
+    </Admin>
+
+    <Admin>
+        <AdminID>A003</AdminID>
+        <AdminName>Carlos Reyes</AdminName>
+        <AdminEmail>carlosreyes@gmail.com</AdminEmail>
+        <AdminLocation>Batangas City, Batangas</AdminLocation>
+        <Status>Inactive</Status>
+    </Admin>
+
+    <Admin>
+        <AdminID>A004</AdminID>
+        <AdminName>Angela Mendoza</AdminName>
+        <AdminEmail>angelamendoza@gmail.com</AdminEmail>
+        <AdminLocation>Calamba City, Laguna</AdminLocation>
+        <Status>Active</Status>
+    </Admin>
+
+    <Admin>
+        <AdminID>A005</AdminID>
+        <AdminName>Joshua Flores</AdminName>
+        <AdminEmail>joshuaflores@gmail.com</AdminEmail>
+        <AdminLocation>Lucena City, Quezon</AdminLocation>
+        <Status>Suspended</Status>
+    </Admin>
+
+    <!-- Jobhunters record list -->
+    <JobHunter>
+        <JobHunterID>H001</JobHunterID>
+        <JobHunterName>Maria S Lopez</JobHunterName>
+        <JobHunterEmail>marialopez@gmail.com</JobHunterEmail>
+        <JobHunterLocation>Tanauan City, Batangas</JobHunterLocation>
+        <Availability>Available</Availability>
+    </JobHunter>
+
+    <JobHunter>
+        <JobHunterID>H002</JobHunterID>
+        <JobHunterName>Carlos Mendoza</JobHunterName>
+        <JobHunterEmail>carlosmendoza@gmail.com</JobHunterEmail>
+        <JobHunterLocation>Santo Tomas, Batangas</JobHunterLocation>
+        <Availability>Unavailable</Availability>
+    </JobHunter>
+
+    <JobHunter>
+        <JobHunterID>H003</JobHunterID>
+        <JobHunterName>Angela Reyes</JobHunterName>
+        <JobHunterEmail>angelareyes@gmail.com</JobHunterEmail>
+        <JobHunterLocation>Lipa City, Batangas</JobHunterLocation>
+        <Availability>Available</Availability>
+    </JobHunter>
+
+    <JobHunter>
+        <JobHunterID>H004</JobHunterID>
+        <JobHunterName>Joshua Rivera</JobHunterName>
+        <JobHunterEmail>joshuarivera@gmail.com</JobHunterEmail>
+        <JobHunterLocation>Batangas City, Batangas</JobHunterLocation>
+        <Availability>Available</Availability>
+    </JobHunter>
+
+    <JobHunter>
+        <JobHunterID>H005</JobHunterID>
+        <JobHunterName>Daniel Flores</JobHunterName>
+        <JobHunterEmail>danielflores@gmail.com</JobHunterEmail>
+        <JobHunterLocation>San Pablo, Laguna</JobHunterLocation>
+        <Availability>Unavailable</Availability>
+    </JobHunter>
+
+    <JobHunter>
+        <JobHunterID>H006</JobHunterID>
+        <JobHunterName>Sarah Bautista</JobHunterName>
+        <JobHunterEmail>sarahbautista@gmail.com</JobHunterEmail>
+        <JobHunterLocation>Lucena City, Quezon</JobHunterLocation>
+        <Availability>Available</Availability>
+    </JobHunter>
+
+    <JobHunter>
+        <JobHunterID>H007</JobHunterID>
+        <JobHunterName>Mark Santos</JobHunterName>
+        <JobHunterEmail>marksantos@gmail.com</JobHunterEmail>
+        <JobHunterLocation>Lemery, Batangas</JobHunterLocation>
+        <Availability>Available</Availability>
+    </JobHunter>
+
+    <JobHunter>
+        <JobHunterID>H008</JobHunterID>
+        <JobHunterName>Kevin Dela Cruz</JobHunterName>
+        <JobHunterEmail>kevindelacruz@gmail.com</JobHunterEmail>
+        <JobHunterLocation>San Jose, Batangas</JobHunterLocation>
+        <Availability>Unavailable</Availability>
+    </JobHunter>
+
+    <JobHunter>
+        <JobHunterID>H009</JobHunterID>
+        <JobHunterName>Ralph Garcia</JobHunterName>
+        <JobHunterEmail>ralphgarcia@gmail.com</JobHunterEmail>
+        <JobHunterLocation>San Pablo, Laguna</JobHunterLocation>
+        <Availability>Available</Availability>
+    </JobHunter>
+
+    <JobHunter>
+        <JobHunterID>H010</JobHunterID>
+        <JobHunterName>Jenny Morales</JobHunterName>
+        <JobHunterEmail>jennymorales@gmail.com</JobHunterEmail>
+        <JobHunterLocation>Malvar, Batangas</JobHunterLocation>
+        <Availability>Available</Availability>
+    </JobHunter>
+
+    <!-- Job record list -->
+
+<Job>
+    <JobID>J001</JobID>
+    <EmployerID>E001</EmployerID>
+    <JobName>Construction Worker</JobName>
+    <JobType>Manual Labor</JobType>
+    <JobLocation>Lipa City, Batangas</JobLocation>
+    <JobStatus>Filled</JobStatus>
+    <JobDescription>
+        Performs basic construction tasks on site.
+        Assists skilled workers in building structures.
+        Handles tools and materials safely.
+        Follows safety protocols at all times.
+        Works under supervision of foreman.
+    </JobDescription>
+</Job>
+
+<Job>
+    <JobID>J002</JobID>
+    <EmployerID>E002</EmployerID>
+    <JobName>Welder</JobName>
+    <JobType>Skilled Labor</JobType>
+    <JobLocation>Batangas City, Batangas</JobLocation>
+    <JobStatus>Open</JobStatus>
+    <JobDescription>
+        Joins metal parts using welding equipment.
+        Reads basic technical drawings.
+        Ensures strong and clean welds.
+        Maintains welding tools and safety gear.
+        Works in industrial or construction settings.
+    </JobDescription>
+</Job>
+
+<Job>
+    <JobID>J012</JobID>
+    <EmployerID>E003</EmployerID>
+    <JobName>Gardener</JobName>
+    <JobType>Outdoor Work</JobType>
+    <JobLocation>Rosario, Batangas</JobLocation>
+    <JobStatus>Reopened</JobStatus>
+    <JobDescription>
+        Maintains plants, lawns, and gardens.
+        Waters and prunes plants regularly.
+        Removes weeds and garden debris.
+        Applies fertilizers and soil care techniques.
+        Ensures outdoor spaces are clean and presentable.
+    </JobDescription>
+</Job>
+
+<Job>
+    <JobID>J004</JobID>
+    <EmployerID>E004</EmployerID>
+    <JobName>Auto Mechanic</JobName>
+    <JobType>Technical Work</JobType>
+    <JobLocation>Tanauan City, Batangas</JobLocation>
+    <JobStatus>Open</JobStatus>
+    <JobDescription>
+        Diagnoses vehicle engine problems.
+        Repairs and replaces faulty car parts.
+        Performs routine vehicle maintenance.
+        Uses diagnostic tools and equipment.
+        Ensures vehicles are safe to operate.
+    </JobDescription>
+</Job>
+
+<Job>
+    <JobID>J005</JobID>
+    <EmployerID>E005</EmployerID>
+    <JobName>Electrician</JobName>
+    <JobType>Electrical Work</JobType>
+    <JobLocation>Calamba City, Laguna</JobLocation>
+    <JobStatus>Open</JobStatus>
+    <JobDescription>
+        Installs and repairs electrical systems.
+        Reads electrical blueprints and diagrams.
+        Ensures wiring meets safety standards.
+        Troubleshoots electrical issues efficiently.
+        Maintains tools and safety compliance.
+    </JobDescription>
+</Job>
+
+<Job>
+    <JobID>J006</JobID>
+    <EmployerID>E006</EmployerID>
+    <JobName>Laundry Staff</JobName>
+    <JobType>Service Work</JobType>
+    <JobLocation>Lucena City, Quezon</JobLocation>
+    <JobStatus>Filled</JobStatus>
+    <JobDescription>
+        Washes and cleans clothes and linens.
+        Operates washing and drying machines.
+        Sorts garments by fabric and color.
+        Ensures proper folding and packaging.
+        Maintains cleanliness of laundry area.
+    </JobDescription>
+</Job>
+
+<Job>
+    <JobID>J007</JobID>
+    <EmployerID>E007</EmployerID>
+    <JobName>Carpenter</JobName>
+    <JobType>Woodwork</JobType>
+    <JobLocation>Tanauan City, Batangas</JobLocation>
+    <JobStatus>Open</JobStatus>
+    <JobDescription>
+        Builds and repairs wooden structures.
+        Measures and cuts wood accurately.
+        Reads basic construction plans.
+        Uses hand and power tools safely.
+        Finishes surfaces for quality output.
+    </JobDescription>
+</Job>
+
+<Job>
+    <JobID>J008</JobID>
+    <EmployerID>E008</EmployerID>
+    <JobName>Delivery Rider</JobName>
+    <JobType>Logistics</JobType>
+    <JobLocation>Batangas City, Batangas</JobLocation>
+    <JobStatus>Open</JobStatus>
+    <JobDescription>
+        Delivers packages to assigned locations.
+        Follows efficient delivery routes.
+        Ensures items are handled safely.
+        Communicates with customers and dispatch.
+        Maintains motorcycle in good condition.
+    </JobDescription>
+</Job>
+
+<Job>
+    <JobID>J009</JobID>
+    <EmployerID>E009</EmployerID>
+    <JobName>Plumber</JobName>
+    <JobType>Maintenance Work</JobType>
+    <JobLocation>San Jose, Batangas</JobLocation>
+    <JobStatus>Reopened</JobStatus>
+    <JobDescription>
+        Installs and repairs water systems.
+        Fixes leaks and pipe blockages.
+        Reads plumbing layouts and plans.
+        Uses plumbing tools effectively.
+        Ensures proper water flow systems.
+    </JobDescription>
+</Job>
+
+<Job>
+    <JobID>J010</JobID>
+    <EmployerID>E010</EmployerID>
+    <JobName>Store Helper</JobName>
+    <JobType>Retail Work</JobType>
+    <JobLocation>Lipa City, Batangas</JobLocation>
+    <JobStatus>Open</JobStatus>
+    <JobDescription>
+        Assists in daily store operations.
+        Stocks shelves and organizes products.
+        Helps customers with basic inquiries.
+        Maintains cleanliness of store area.
+        Supports cashier and inventory tasks.
+    </JobDescription>
+</Job>
+
+<Job>
+    <JobID>J011</JobID>
+    <EmployerID>E001</EmployerID>
+    <JobName>Painter</JobName>
+    <JobType>Construction Work</JobType>
+    <JobLocation>Tanauan City, Batangas</JobLocation>
+    <JobStatus>Open</JobStatus>
+    <JobDescription>
+        Applies paint to interior and exterior surfaces.
+        Prepares walls by cleaning and sanding.
+        Mixes colors for desired finishes.
+        Uses brushes, rollers, and spray tools.
+        Ensures smooth and even paint application.
+    </JobDescription>
+</Job>
+
+<Job>
+    <JobID>J012</JobID>
+    <EmployerID>E003</EmployerID>
+    <JobName>Gardener</JobName>
+    <JobType>Outdoor Work</JobType>
+    <JobLocation>Rosario, Batangas</JobLocation>
+    <JobStatus>Reopened</JobStatus>
+    <JobDescription>
+        Maintains plants, lawns, and gardens.
+        Waters and prunes plants regularly.
+        Removes weeds and garden debris.
+        Applies fertilizers and soil care techniques.
+        Ensures outdoor spaces are clean and presentable.
+    </JobDescription>
+</Job>
+
+<Job>
+    <JobID>J013</JobID>
+    <EmployerID>E005</EmployerID>
+    <JobName>Warehouse Staff</JobName>
+    <JobType>Logistics</JobType>
+    <JobLocation>Calamba City, Laguna</JobLocation>
+    <JobStatus>Closed</JobStatus>
+    <JobDescription>
+        Organizes items in warehouse storage.
+        Packs and labels goods for shipment.
+        Tracks inventory records accurately.
+        Loads and unloads delivery items.
+        Maintains order and cleanliness in warehouse.
+    </JobDescription>
+</Job>
+
+<Job>
+    <JobID>J014</JobID>
+    <EmployerID>E001</EmployerID>
+    <JobName>Tile Installer</JobName>
+    <JobType>Construction Work</JobType>
+    <JobLocation>Batangas City, Batangas</JobLocation>
+    <JobStatus>Closed</JobStatus>
+    <JobDescription>
+        Installs tiles on floors and walls.
+        Measures and cuts tiles precisely.
+        Applies adhesives and grout properly.
+        Ensures even alignment and finishing.
+        Repairs or replaces damaged tiles.
+    </JobDescription>
+</Job>
+
+<Job>
+    <JobID>J015</JobID>
+    <EmployerID>E008</EmployerID>
+    <JobName>Car Wash Attendant</JobName>
+    <JobType>Service Work</JobType>
+    <JobLocation>Lemery, Batangas</JobLocation>
+    <JobStatus>Reopened</JobStatus>
+    <JobDescription>
+        Washes and cleans vehicle exteriors.
+        Cleans interiors including vacuuming.
+        Applies wax and polishing services.
+        Uses cleaning equipment safely.
+        Ensures customer satisfaction with results.
+    </JobDescription>
+</Job>
+
+    <!-- Employer record list -->
+
+    <Employer>
+        <EmployerID>E001</EmployerID>
+        <EmployerName>BuildRight Construction</EmployerName>
+        <EmployerContact>09123456789</EmployerContact>
+        <EmployerLocation>Batangas City, Batangas</EmployerLocation>
+        <Industry>Construction</Industry>
+    </Employer>
+
+    <Employer>
+        <EmployerID>E002</EmployerID>
+        <EmployerName>Batangas Steel Works</EmployerName>
+        <EmployerContact>09111111111</EmployerContact>
+        <EmployerLocation>Lipa City, Batangas</EmployerLocation>
+        <Industry>Manufacturing</Industry>
+    </Employer>
+
+    <Employer>
+        <EmployerID>E003</EmployerID>
+        <EmployerName>Golden Harvest Farm</EmployerName>
+        <EmployerContact>09222222222</EmployerContact>
+        <EmployerLocation>Rosario, Batangas</EmployerLocation>
+        <Industry>Agriculture</Industry>
+    </Employer>
+
+    <Employer>
+        <EmployerID>E004</EmployerID>
+        <EmployerName>Metro Auto Repair</EmployerName>
+        <EmployerContact>09333333333</EmployerContact>
+        <EmployerLocation>Tanauan City, Batangas</EmployerLocation>
+        <Industry>Automotive Services</Industry>
+    </Employer>
+
+    <Employer>
+        <EmployerID>E005</EmployerID>
+        <EmployerName>South Luzon Electrical Services</EmployerName>
+        <EmployerContact>09444444444</EmployerContact>
+        <EmployerLocation>Calamba City, Laguna</EmployerLocation>
+        <Industry>Electrical Services</Industry>
+    </Employer>
+
+    <Employer>
+        <EmployerID>E006</EmployerID>
+        <EmployerName>CleanWave Laundry Services</EmployerName>
+        <EmployerContact>09555555555</EmployerContact>
+        <EmployerLocation>Lucena City, Quezon</EmployerLocation>
+        <Industry>Laundry Services</Industry>
+    </Employer>
+
+    <Employer>
+        <EmployerID>E007</EmployerID>
+        <EmployerName>Prime Furniture Makers</EmployerName>
+        <EmployerContact>09666666666</EmployerContact>
+        <EmployerLocation>Tanauan City, Batangas</EmployerLocation>
+        <Industry>Furniture Manufacturing</Industry>
+    </Employer>
+
+    <Employer>
+        <EmployerID>E008</EmployerID>
+        <EmployerName>Fresh Catch Market</EmployerName>
+        <EmployerContact>09777777777</EmployerContact>
+        <EmployerLocation>Batangas City, Batangas</EmployerLocation>
+        <Industry>Retail and Seafood Market</Industry>
+    </Employer>
+
+    <Employer>
+        <EmployerID>E009</EmployerID>
+        <EmployerName>QuickFix Plumbing Services</EmployerName>
+        <EmployerContact>09170000009</EmployerContact>
+        <EmployerLocation>San Jose, Batangas</EmployerLocation>
+        <Industry>Plumbing Services</Industry>
+    </Employer>
+
+    <Employer>
+        <EmployerID>E010</EmployerID>
+        <EmployerName>Sunrise Hardware</EmployerName>
+        <EmployerContact>09170000010</EmployerContact>
+        <EmployerLocation>Lipa City, Batangas</EmployerLocation>
+        <Industry>Hardware and Retail</Industry>
+    </Employer>
+
+    <!-- Payment record list -->
+    <Payment>
+        <PaymentID>P001</PaymentID>
+        <JobHunterID>H001</JobHunterID>
+        <JobID>J001</JobID>
+        <PaymentAmount>650</PaymentAmount>
+        <PaymentDate>2026-04-27</PaymentDate>
+        <PaymentReference>REF123456</PaymentReference>
+    </Payment>
+
+    <Payment>
+        <PaymentID>P002</PaymentID>
+        <JobHunterID>H003</JobHunterID>
+        <JobID>J002</JobID>
+        <PaymentAmount>850</PaymentAmount>
+        <PaymentDate>2026-04-28</PaymentDate>
+        <PaymentReference>REF123457</PaymentReference>
+    </Payment>
+
+    <Payment>
+        <PaymentID>P003</PaymentID>
+        <JobHunterID>H004</JobHunterID>
+        <JobID>J004</JobID>
+        <PaymentAmount>1200</PaymentAmount>
+        <PaymentDate>2026-04-29</PaymentDate>
+        <PaymentReference>REF123458</PaymentReference>
+    </Payment>
+
+    <Payment>
+        <PaymentID>P004</PaymentID>
+        <JobHunterID>H006</JobHunterID>
+        <JobID>J007</JobID>
+        <PaymentAmount>950</PaymentAmount>
+        <PaymentDate>2026-04-30</PaymentDate>
+        <PaymentReference>REF123459</PaymentReference>
+    </Payment>
+
+    <Payment>
+        <PaymentID>P005</PaymentID>
+        <JobHunterID>H007</JobHunterID>
+        <JobID>J008</JobID>
+        <PaymentAmount>700</PaymentAmount>
+        <PaymentDate>2026-05-01</PaymentDate>
+        <PaymentReference>REF123460</PaymentReference>
+    </Payment>
+
+    <Payment>
+        <PaymentID>P006</PaymentID>
+        <JobHunterID>H009</JobHunterID>
+        <JobID>J010</JobID>
+        <PaymentAmount>550</PaymentAmount>
+        <PaymentDate>2026-05-02</PaymentDate>
+        <PaymentReference>REF123461</PaymentReference>
+    </Payment>
+
+    <Payment>
+        <PaymentID>P007</PaymentID>
+        <JobHunterID>H010</JobHunterID>
+        <JobID>J011</JobID>
+        <PaymentAmount>800</PaymentAmount>
+        <PaymentDate>2026-05-03</PaymentDate>
+        <PaymentReference>REF123462</PaymentReference>
+    </Payment>
+
+    <Payment>
+        <PaymentID>P008</PaymentID>
+        <JobHunterID>H001</JobHunterID>
+        <JobID>J013</JobID>
+        <PaymentAmount>900</PaymentAmount>
+        <PaymentDate>2026-05-04</PaymentDate>
+        <PaymentReference>REF123463</PaymentReference>
+    </Payment>
+
+    <Payment>
+        <PaymentID>P009</PaymentID>
+        <JobHunterID>H003</JobHunterID>
+        <JobID>J014</JobID>
+        <PaymentAmount>1100</PaymentAmount>
+        <PaymentDate>2026-05-05</PaymentDate>
+        <PaymentReference>REF123464</PaymentReference>
+    </Payment>
+
+</MicroLift>
