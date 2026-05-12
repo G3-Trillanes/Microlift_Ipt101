@@ -36,6 +36,75 @@ const exportButtons = {
     job: document.getElementById('export-j'),
     payment: document.getElementById('export-pay')
 };
+
+
+const fileInput = document.getElementById("admin-file");
+const okButton = document.getElementById("ok-btn");
+
+okButton.addEventListener("click", async () => {
+    const file = fileInput.files[0];
+
+    // Check if file exists
+    if (!file) {
+        alert("Please select a file.");
+        return;
+    }
+
+    // Check extension
+    if (!file.name.toLowerCase().endsWith(".sql")) {
+        alert("Only .sql files are allowed.");
+        return;
+    }
+
+    // Read file content
+    const sqlText = await file.text();
+
+    // Remove comments
+    const cleanedSQL = sqlText
+        .replace(/--.*$/gm, "")
+        .replace(/\/\*[\s\S]*?\*\//g, "")
+        .trim();
+
+    // Split queries
+    const queries = cleanedSQL
+        .split(";")
+        .map(q => q.trim())
+        .filter(q => q.length > 0);
+
+    // Allow ONLY INSERT statements
+    const invalidQueries = queries.filter(query => {
+        return !/^insert\s+into/i.test(query);
+    });
+
+    if (invalidQueries.length > 0) {
+        alert("Only INSERT INTO statements are allowed.");
+        console.error("Blocked Queries:", invalidQueries);
+        return;
+    }
+
+    alert("SQL file validated successfully.");
+
+    // Example: send to backend / Supabase Edge Function
+    console.log("Allowed Queries:", queries);
+
+    const response = await fetch(
+        "https://iuaxqrahkllnodwmxlri.supabase.co/functions/v1/run-sql",
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml1YXhxcmFoa2xsbm9kd214bHJpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgyNDk2NjYsImV4cCI6MjA5MzgyNTY2Nn0.37G8mw4nIuc2cARhfc3UnShd4RfRsH503lFhoEdwD9I"
+            },
+            body: JSON.stringify({
+                queries
+            })
+        }
+    );
+
+    const result = await response.json();
+
+    console.log(result);
+});
 /**
  * Fetches generic table data from Supabase and passes it to the rendering function.
  */
