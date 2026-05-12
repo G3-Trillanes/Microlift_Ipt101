@@ -117,6 +117,7 @@ section h2 {
 .table-wrapper {
     max-height: 550px;
     overflow-y: auto;
+    overflow-x: auto;
     border-radius: 15px;
     padding: 10px;
 }
@@ -273,4 +274,111 @@ table tbody tr:hover {
 
 .footer p {
     margin: 5px 0;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+    .header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .title-text {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+        border-left-width: 6px;
+    }
+
+    section h2 {
+        font-size: 1.4em;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-input,
+    .filters {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .receipt-container {
+        grid-template-columns: 1fr;
+    }
+
+    .job-container {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        min-width: 600px;
+    }
+
+    .section-header {
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 480px) {
+
+    .title-text {
+        font-size: 18px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 14px;
+    }
+
+    section {
+        padding: 12px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .receipt-card,
+    .job-card {
+        padding: 10px;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
 }
