@@ -256,6 +256,7 @@ table tbody tr:hover {
     margin: 6px 0;
 }
 
+
 /* =========================
    JOB CARDS
 ========================= */
@@ -283,6 +284,32 @@ table tbody tr:hover {
 .job-card p {
     margin: 6px 0;
 }
+
+#print-admins,
+#print-employers,
+#print-job-hunters,
+#print-jobs,
+#print-payments {
+    margin-left: auto;
+    padding: 8px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#print-admins:hover,
+#print-employers:hover,
+#print-job-hunters:hover,
+#print-jobs:hover,
+#print-payments:hover {
+    background-color: #0b1f3a60;
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
 
 /* =========================
    EXPORT BUTTONS
